@@ -1,5 +1,5 @@
-import { FooterPage } from "./components/Footer";
 import { Router } from "./router";
+import "./css/style.css"
 
 document.querySelector('#root').innerHTML = ` 
  <main id = "app" ></main>
