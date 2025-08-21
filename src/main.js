@@ -1,8 +1,8 @@
+import { FooterPage } from "./components/Footer";
 import { Router } from "./router";
 
 document.querySelector('#root').innerHTML = ` 
- <main id = "app" > </main>
- 
+ <main id = "app" ></main>
 `;
 
 window.addEventListener('DOMContentLoaded', Router);
