@@ -1,5 +1,7 @@
 import { FooterPage } from "../components/Footer";
 import { HeaderPage } from "../components/Header";
+import v2 from "../assets/Vector2.png"
+import { HowToDownload } from "../components/Tutorial";
 
 export function HomePage() {
     return `
@@ -9,33 +11,34 @@ export function HomePage() {
              <main class="flex-grow p-8">
                <div id="content-display" class="text-center text-2xl font-semibold">
               </div>
-              <div class="md:flex justify-center items-center w-full mt-12">
-
-                <div class="bg-white w-[60%] h-16 rounded-2xl flex items-center px-4 gap-4">
-
+              <div class="flex justify-center items-center w-full mt-12">
+                <div class="bg-white w-full md:w-[60%] h-12 md:h-16 rounded-2xl flex items-center px-3 md:px-4 gap-2 md:gap-4">
+                  
                   <input 
-                   id="link-input"
+                    id="link-input"
                     type="text" 
                     placeholder="Insert your link here..." 
-                    class=" placeholder:font-semibold  w-full h-full flex-grow bg-transparent outline-none text-left text-black font-light text-2xl"
+                    class="placeholder:font-semibold w-full h-full flex-grow bg-transparent outline-none text-left text-black font-light text-lg md:text-2xl"
                   >
 
-                  <button  id="paste-btn" class="flex items-center gap-2 px-3 py-3.5 rounded-2xl bg-black hover:bg-lime-300 hover:text-black text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <button id="paste-btn" class="flex items-center gap-2 px-2 md:px-3 py-2 md:py-3.5 rounded-2xl bg-black hover:bg-lime-300 hover:text-black text-white text-sm md:text-base">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                       <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                     </svg>
-                      Paste
+                    Paste
                   </button>
 
-                  <button class="social-btn px-4 py-3.5 rounded-2xl text-black font-semibold cursor-pointer ">
+                  <button class="social-btn px-3 md:px-4 py-2 md:py-3.5 rounded-2xl text-black font-semibold cursor-pointer text-sm md:text-base">
                     Download
                   </button>
-
                 </div>
               </div>
+                  ${HowToDownload()}
               </div>
              </main>
+              <img src=${v2} alt="Light effect"
+                   class="absolute -left-10 top-1/2 -translate-y-1/2 w-200 h-auto pointer-events-none select-none" />
            ${FooterPage()}
 
         </div>
