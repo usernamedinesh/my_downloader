@@ -5,7 +5,7 @@ import link from  "../assets/link.png"
 
 export function HowToDownload() {
   return `
-    <div class="relative text-white mt-60 text-center text-2xl font-semibold w-full">
+    <div class="overflow-x-hidden relative text-white mt-60 text-center text-2xl font-semibold w-full">
       <h1 class="text-3xl font-bold">How to Download Videos?</h1>
 
       <div class="grid grid-rows-3 gap-20 md:flex md:justify-between md:mx-20 mt-10 text-left">
