@@ -6,7 +6,7 @@ import pin from "../assets/pinterest.png"
 
 export function HeaderPage() {
     return `
-    <div id="social-nav" class="flex flex-col md:flex-row justify-center mt-10 divide-y md:divide-y-0 md:divide-x-1 items-center">
+    <div id="social-nav" class="flex flex-col md:flex-row justify-center mt-10 divide-y md:divide-y-0 md:divide-x divide-black items-center">
 
       <button data-platform="ins" class="md:px-8 social-btn active-btn px-8 p-3 cursor-pointer md:rounded-s-2xl rounded-tl-2xl">
         <img src=${ins} alt="Instagram" width="40" class="pointer-events-none">
