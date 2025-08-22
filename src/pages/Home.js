@@ -3,6 +3,7 @@ import { HeaderPage } from "../components/Header";
 import v2 from "../assets/Vector2.png"
 import { HowToDownload } from "../components/Tutorial";
 import { Navbar } from "../components/Navbar";
+import { Faq } from "../components/Faq";
 
 export function HomePage() {
     return `
@@ -51,7 +52,8 @@ export function HomePage() {
             </div>
             
             <div>
-
+            ${Faq()}
+            ${FooterPage()}
 
         </div>
         `

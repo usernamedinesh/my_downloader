@@ -5,10 +5,10 @@ import link from  "../assets/link.png"
 
 export function HowToDownload() {
   return `
-    <div class="overflow-x-hidden relative text-white mt-60 text-center text-2xl font-semibold w-full">
+<div class="relative z-10 text-white mt-50 text-center text-2xl font-semibold w-full">
       <h1 class="text-3xl font-bold">How to Download Videos?</h1>
 
-      <div class="grid grid-rows-3 gap-20 md:flex md:justify-between md:mx-20 mt-10 text-left">
+      <div class=" grid grid-rows-3 gap-20 md:flex md:justify-between md:mx-20 mt-20 text-left">
 
         <!-- Card 1 -->
         <div class="relative w-full md:w-1/3 bg-amber-50 text-black px-10 py-30 cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
@@ -52,9 +52,6 @@ export function HowToDownload() {
         </div>
       </div>
 
-      <!-- Decorative vector light -->
-      <img src=${v1} alt="Light effect"
-        class="absolute rotate-180 -right-10 top-2/4 -translate-y-1/3 w-150 h-auto pointer-events-none select-none" />
     </div>
   `
 }
