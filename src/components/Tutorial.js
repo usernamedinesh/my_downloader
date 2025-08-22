@@ -7,7 +7,7 @@ export function HowToDownload() {
 
       <div class="grid grid-rows-3 gap-20 md:flex md:justify-between md:mx-20 mt-10 text-left">
         
-        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 py-[30px] cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
+        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 py-30 cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
           <h2 class="text-center text-xl font-semibold">Copy the URL</h2>
           <p class="mt-5 text-base font-normal">
             On Instagram, Facebook, Twitter, or Pinterest, open the post,
@@ -16,15 +16,15 @@ export function HowToDownload() {
           </p>
         </div>
 
-        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 py-[30px] rounded-3xl">
+        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 rounded-3xl cursor-pointer py-30  transform hover:scale-105 transition duration-300 ">
           <h2 class="text-center text-xl font-semibold">Paste the Link</h2>
           <p class="mt-5 text-base font-normal">
             Go to <span class="font-bold">www.vidextract.net</span> and paste the link.
           </p>
         </div>
 
-        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 py-[30px] rounded-3xl">
-          <h2 class="text-center text-xl font-semibold">Download</h2>
+        <div class="w-full md:w-1/3 bg-amber-50 text-black px-10 cursor-pointer rounded-3xl py-30 transform hover:scale-105 transition duration-300 ">
+          <h2 class="text-center text-xl font-semibold">Click Download</h2>
           <p class="mt-5 text-base font-normal">
             Click the download button and save what you want. 
             We provide MP4 & MP3 in the highest quality — fast and free.
