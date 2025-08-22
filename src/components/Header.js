@@ -3,12 +3,6 @@ import x from "../assets/x.png"
 import face from "../assets/facebook.png"
 import pin from "../assets/pinterest.png"
 
-const downloaderType  = {
-    Instagram : "Instagram",
-    Facebook  : "Facebook",
-    Twitter   : "Twitter",
-    Pinterest : "Pinterest"
-}
 
 export function HeaderPage() {
     return `
@@ -31,11 +25,5 @@ export function HeaderPage() {
 
     </div>
 
-    <div class="text-white text-center mt-10 font-bold text-4xl">
-        <h2> Instagram Video Downlader </h2>
-        <h2> Facebook Video Downlader </h2>
-        <h2> Pinterest Video Downlader </h2>
-        <h2> X Video Downlader </h2>
-    </div>
     `;
 }
