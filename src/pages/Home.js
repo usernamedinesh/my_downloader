@@ -2,16 +2,24 @@ import { FooterPage } from "../components/Footer";
 import { HeaderPage } from "../components/Header";
 import v2 from "../assets/Vector2.png"
 import { HowToDownload } from "../components/Tutorial";
+import { Navbar } from "../components/Navbar";
 
 export function HomePage() {
     return `
         <div class="flex flex-col min-h-dvh text-white">
+            ${Navbar()}
         
             ${HeaderPage()}
+              <div class="relative">
+              <!-- Decorative vector light -->
+              <img src=${v2} alt="Light effect"
+              class="absolute -left-10 -top-1 w-200 h-auto pointer-events-none select-none -z-10" />
+              </div>
+
              <main class="flex-grow p-8">
                <div id="content-display" class="text-center text-2xl font-semibold">
               </div>
-              <div class="flex justify-center items-center w-full mt-12">
+              <div class="flex justify-center items-center w-full mt-12 relative z-10">
                 <div class="bg-white w-full md:w-[60%] h-12 md:h-16 rounded-2xl flex items-center px-3 md:px-4 gap-2 md:gap-4">
                   
                   <input 
@@ -34,12 +42,16 @@ export function HomePage() {
                   </button>
                 </div>
               </div>
-                  ${HowToDownload()}
+                ${HowToDownload()}
               </div>
              </main>
-              <img src=${v2} alt="Light effect"
-                   class="absolute -left-10 top-1/2 -translate-y-1/2 w-200 h-auto pointer-events-none select-none" />
-           ${FooterPage()}
+
+            <div>
+
+            </div>
+            
+            <div>
+
 
         </div>
         `
