@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.social-btn {
+  /* From: bg-lime-300 */
+  background-color: #bef264; 
+
+  /* From: transition-colors and duration-200 */
+  transition: background-color 200ms ease-in-out;
+}
+
+.active-btn {
+  /* From: bg-white */
+  background-color: #ffffff;
+
+  /* From: shadow-inner */
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}

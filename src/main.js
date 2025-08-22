@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', Router);
 
 window.addEventListener('popstate', Router)
 
+
 document.body.addEventListener('click', e => {
   if (e.target.matches('a')) {
     e.preventDefault()
