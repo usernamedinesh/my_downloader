@@ -9,7 +9,14 @@ import e8 from "../assets/e8.png"
 
 export function Faq() {
   return `
-    <section class="relative w-full flex justify-center items-center py-20  overflow-hidden">
+    <section class="relative w-full flex justify-center items-center py-15  overflow-hidden">
+        <!--vector image -->
+        <img src=${e1} alt="eclips"
+            class="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/3 w-[200px] h-[200px] opacity-40 blur-3xl pointer-events-nonk"
+        />
+        <img src=${e2} alt="eclips"
+            class="absolute top-1/2 left-1/2  w-[200px] h-[200px] opacity-40 blur-3xl pointer-events-nonk"
+        />
       <!-- FAQ Box -->
       <div class="relative z-10 bg-gradient-to-b from-lime-900/10 to-lime-900/20 rounded-2xl border border-lime-400 max-w-3xl mx-4 p-10 text-white">
         <h1 class="text-3xl font-bold text-center mb-8">Frequently asked questions</h1>
