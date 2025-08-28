@@ -14,10 +14,10 @@ export function HowToDownload() {
         <div class="relative w-full md:w-1/3 bg-amber-50 text-black px-10 py-30 cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
           <!-- floating icon -->
       <!-- Floating circle with padding -->
-        <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-lime-300 rounded-full flex items-center justify-center">
-          <img src=${link} alt="Pinterest" class="w-7 h-7" />
+        <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-18 h-18 bg-lime-300 rounded-full flex items-center justify-center">
+          <img src=${link} alt="Pinterest" class="w-12 h-12" />
         </div>
-          
+
           <h2 class="text-center text-xl font-semibold mt-10">Copy the URL</h2>
           <p class="mt-5 text-base font-normal">
             On Instagram, Facebook, Twitter, or Pinterest, open the post,
@@ -28,10 +28,10 @@ export function HowToDownload() {
 
         <!-- Card 2 -->
         <div class="relative w-full md:w-1/3 bg-amber-50 text-black px-10 py-30 cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
-          <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-lime-300 rounded-full flex items-center justify-center">
-            <img src=${paste} alt="Pinterest" class="w-7 h-7" />
+          <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-18 h-18 bg-lime-300 rounded-full flex items-center justify-center">
+            <img src=${paste} alt="Pinterest" class="w-12 h-12" />
           </div>
-          
+
           <h2 class="text-center text-xl font-semibold mt-10">Paste the Link</h2>
           <p class="mt-5 text-base font-normal">
             Go to <span class="font-bold">www.vidextract.net</span> and paste the link.
@@ -40,13 +40,13 @@ export function HowToDownload() {
 
         <!-- Card 3 -->
         <div class="relative w-full md:w-1/3 bg-amber-50 text-black px-10 py-30 cursor-pointer rounded-3xl transform hover:scale-105 transition duration-300">
-          <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-lime-300 rounded-full flex items-center justify-center">
-            <img src=${download} alt="Pinterest" class="w-7 h-7" />
+          <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-18 h-18 bg-lime-300 rounded-full flex items-center justify-center">
+            <img src=${download} alt="Pinterest" class="w-12 h-12" />
           </div>
-          
+
           <h2 class="text-center text-xl font-semibold mt-10">Click Download</h2>
           <p class="mt-5 text-base font-normal">
-            Click the download button and save what you want. 
+            Click the download button and save what you want.
             We provide MP4 & MP3 in the highest quality — fast and free.
           </p>
         </div>
