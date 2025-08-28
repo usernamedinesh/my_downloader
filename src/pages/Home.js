@@ -9,7 +9,7 @@ export function HomePage() {
     return `
         <div class="flex flex-col min-h-dvh text-white">
             ${Navbar()}
-        
+
             ${HeaderPage()}
               <div class="relative">
               <!-- Decorative vector light -->
@@ -17,20 +17,20 @@ export function HomePage() {
               class="absolute -left-10 -top-1 w-200 h-auto pointer-events-none select-none -z-10" />
               </div>
 
-             <main class="flex-grow p-8">
+             <main class="flex-grow p-4 md:p-6">
                <div id="content-display" class="text-center text-2xl font-semibold">
               </div>
               <div class="flex justify-center items-center w-full mt-12 relative z-10">
                 <div class="bg-white w-full md:w-[60%] h-12 md:h-16 rounded-2xl flex items-center px-3 md:px-4 gap-2 md:gap-4">
-                  
-                  <input 
+
+                  <input
                     id="link-input"
-                    type="text" 
-                    placeholder="Insert your link here..." 
-                    class="placeholder:font-semibold w-full h-full flex-grow bg-transparent outline-none text-left text-black font-light text-lg md:text-2xl"
+                    type="text"
+                    placeholder="Insert your link here..."
+                    class="placeholder:font-semibold w-full h-full flex-grow bg-transparent outline-none text-left text-black font-light text-lg md:text-xl"
                   >
 
-                  <button id="paste-btn" class="flex items-center gap-2 px-2 md:px-3 py-2 md:py-3.5 rounded-2xl bg-black hover:bg-lime-300 hover:text-black text-white text-sm md:text-base">
+                  <button id="paste-btn" class="flex items-center gap-2 px-2 md:px-3 py-1 md:py-3.5 rounded-2xl bg-black hover:bg-lime-300 hover:text-black text-white text-sm md:text-base">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                       <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -38,7 +38,7 @@ export function HomePage() {
                     Paste
                   </button>
 
-                  <button class="social-btn px-3 md:px-4 py-2 md:py-3.5 rounded-2xl text-black font-semibold cursor-pointer text-sm md:text-base">
+                  <button class="social-btn px-2 md:px-4 py-1 md:py-3.5 rounded-2xl text-black font-semibold cursor-pointer text-sm md:text-base">
                     Download
                   </button>
                 </div>
@@ -50,7 +50,7 @@ export function HomePage() {
             <div>
 
             </div>
-            
+
             <div>
             ${Faq()}
             ${FooterPage()}
@@ -60,7 +60,7 @@ export function HomePage() {
 }
 
 export function initHomePageListener() {
-  
+
   const content_data = {
     ins : `
     <h1 class="text-4xl font-bold text-center">My Awesome Video Downloader</h1>
@@ -78,10 +78,10 @@ export function initHomePageListener() {
             <p class="text-lg mt-2">Download Pinterest post videos & photos free & fast<p>
     `
   }
-    
+
 const social_nav = document.querySelector('#social-nav')
-const content_display = document.querySelector("#content-display")  
-  
+const content_display = document.querySelector("#content-display")
+
 const initialActiveBtn = social_nav.querySelector(".active-btn")
 if(initialActiveBtn) {
   const initialPlatform = initialActiveBtn.dataset.platform;
@@ -102,12 +102,12 @@ if(initialActiveBtn) {
         currentActive.classList.remove('active-btn')
       }
       clickedBtn.classList.add('active-btn');
-        
+
       const platform = clickedBtn.dataset.platform;
         content_display.innerHTML = content_data[platform]
     }))
   }
-  
+
 const pasteBtn = document.getElementById("paste-btn");
 const inputField = document.querySelector("#link-input");
 
